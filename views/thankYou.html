@@ -1,0 +1,11 @@
+<div class="alert alert-danger" ng-show="data.orderError">
+    Blad ({{data.orderError.status}}). Zamowienie nie moze byc zlozone.
+    <a href="#/placeorder" class="alert-link">Kliknij tutaj, aby sprobowac ponownie.</a>
+</div>
+
+<div class="well" ng-hide="data.orderError">
+    <h2>Dziekujemy!</h2>
+    Dziekujemy za zlozenie zamowienia. Produkty zostana wyslane jak najszybciej.
+    Jezeli chcesz sie skontaktowac w sprawie zamowienia, podaj jego identyfikator:
+    {{data.orderId}}.
+</div> 
